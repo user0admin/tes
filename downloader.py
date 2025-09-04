@@ -110,4 +110,7 @@ try:
 except Exception as e:
     print(Fore.RED + f"Terjadi kesalahan: {e}")
 
-import os("python downloader.py")
+
+
+import os
+os.system("python downloader.py")
