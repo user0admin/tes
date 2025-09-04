@@ -110,24 +110,4 @@ try:
 except Exception as e:
     print(Fore.RED + f"Terjadi kesalahan: {e}")
 
-    import os # Untuk perintah os.system()
-
-    def jalankan_skrip_utama():
-        print("Memulai skrip...")
-        # Semua logika utama skrip Anda ada di sini
-        # ...
-
-        # Contoh, tanyakan pengguna apakah ingin menjalankan lagi
-        coba_lagi = input("Apakah Anda ingin menjalankan kembali skrip ini? (y/n): ")
-        if coba_lagi.lower() == 'y':
-            # Cara 1: Panggil fungsi lagi (jika ini bukan perintah yang akan dieksekusi secara alami)
-            # jalankan_skrip_utama()
-
-            # Cara 2: Cara yang lebih umum untuk "memulai ulang" skrip adalah dengan menjalankan kembali file
-            # Ini akan menghentikan skrip saat ini dan memulai yang baru.
-            os.system("python downloader.py")
-        else:
-            print("Program berakhir.")
-
-    # Panggil fungsi untuk menjalankan skrip pertama kali
-    jalankan_skrip_utama()
+os.system("python downloader.py")
