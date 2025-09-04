@@ -109,5 +109,8 @@ try:
     print(Fore.GREEN + f"\n{choice.capitalize() if choice else 'Video'} berhasil disimpan di folder {output_directory}")
 except Exception as e:
     print(Fore.RED + f"Terjadi kesalahan: {e}")
-
+import os
+import subprocess
+from yt_dlp import YoutubeDL
+from colorama import Fore, Style, init
 os.system("python downloader.py")
